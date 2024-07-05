@@ -17,15 +17,24 @@ This Intrusion Detection System (IDS) monitors network traffic and detects vario
    pip install scapy
 
 ## Running Netwatch-IDS 
-On Unix-based systems:
-```sh
-sudo python main.py
-```
-On Windows (run as Administrator):
-```sh
-python main.py      
-```
 
+1. Ensure Administrator/Root Privileges:
+   To capture network packets, you need to run the IDS with administrator/root privileges.
+
+2. Run the IDS:  
+   On Unix-based systems:
+   ```sh
+   sudo python main.py
+   ```
+   On Windows (run as Administrator):
+   ```sh
+   python main.py      
+   ```
+
+3. Check the Logs:
+   The IDS will log its activities in the ids.log file. The activities consist of detections by the various signature based detectors.
+
+   
 ## Detectors
 ARP Poisoning Detector  
 Monitors ARP traffic to detect potential ARP spoofing attacks.
